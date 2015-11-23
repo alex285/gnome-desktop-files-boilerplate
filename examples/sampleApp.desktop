@@ -1,0 +1,41 @@
+#######################################################
+##                                                   ##
+## .desktop sample file                              ##
+## Copy this file on $HOME/.local/share/applications ##
+##                                                   ##
+#######################################################
+
+[Desktop Entry]
+Version=1.0                                  #Optional
+Type=Application                             #Required {Application, Folder, Link}
+Name=Foo                                     #Required
+GenericName=Foo App                          #Optional
+Comment=My Sample Foo App                    #Optional
+Icon=$HOME/Apps/Foo/icon.png                 #Optional - If no absolute path then it will use theme specs
+Terminal=False                               #Optional - Whether runs in terminal
+Keywords=Foo;MyApp;Sample;                   #Optional - Metadata for search
+Categories=Development;Games;                #Optional
+Path=$HOME/Apps/Foo/                         #Optional - The working directory
+TryExec=$HOME/Apps/Foo/foo.exe               #Optional - Determines if the app exist. No really needed.
+Exec=$HOME/Apps/Foo/foo.exe %f               #Optional - If no absolute path, whatever is on $PATH
+                                               # It accepts arguments
+                                               # %f Single filename  # %F List of files
+                                               # %u Single url       # %U List of urls
+
+MimeType=text/html;text/xml;                 # Optional - MIME types accepted by this app
+StartupNotify=False                          # Optional - It will send a message on startup
+
+
+#
+# Actions define additional ways to invoke the application
+#
+
+Actions=smth-else;another-action;
+
+[Desktop Action Gallery]
+Exec=foo --something
+Name=Foo Something
+
+[Desktop Action another-action]
+Exec=$HOME/Apps/Foo/foo.exe --new
+Name=New Foo Windows

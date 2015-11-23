@@ -1,0 +1,10 @@
+#Thats from Gnome Weather App
+
+[Desktop Entry]
+Type=Application
+Name=Weather
+Icon=org.gnome.Weather.Application
+Exec=gapplication launch org.gnome.Weather.Application
+DBusActivatable=true
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;

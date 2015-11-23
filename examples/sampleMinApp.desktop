@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=Foo
+Exec=foo %f
+Icon=foo
+Actions=onChrome;onFirefox;
+Terminal=False
+Keywords=video;music;
+Categories=Development;Music;
+
+[Desktop Action onChrome]
+Exec=google-chrome --incognito --profile-directory=noExist %u
+Name=On Chrome
+
+[Desktop Action onFirefox]
+Exec=firefox --private-window %u
+Name=On Firefox
